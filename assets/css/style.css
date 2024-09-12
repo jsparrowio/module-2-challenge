@@ -53,6 +53,25 @@
     line-height: 1;
   }
   
+  footer {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+  }
+  
+  footer h3 {
+    color: var(--secondary);
+    padding: 5px;
+    margin: 0;
+    font-size: 2vw;
+    line-height: 1;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -170,6 +189,7 @@
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
+    position: relative;
   }
   
   /* feature first portfolio item */
@@ -191,6 +211,15 @@
     font-size: 1.6rem;
   }
   
+  a.fill-div {
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+
   .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -221,24 +250,34 @@
   
   /* portfolio project images */
   /* TODO: Add portfolio project images here using background images*/
-  .run-buddy {
-    
+  .port-item-1 {
+    background-image: url("../images/port-image-01.jpeg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .led-wall {
-    
+  .port-item-2 {
+    background-image: url("../images/port-image-02.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .react-calc {
-    
+  .port-item-3 {
+    background-image: url("../images/port-image-03.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .pastel-puzzles {
-    
+  .port-item-4 {
+    background-image: url("../images/port-image-04.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .surf-report {
-    
+  .port-item-5 {
+    background-image: url("../images/port-image-05.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
   /* media queries */
@@ -279,3 +318,14 @@
   
   /* TODO: add media query for a max-width of 768px */
   
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex-basis: 100%;
+      max-height: 200px;
+      min-height: 200px;
+    }
+    .flex-item:first-child {
+      max-height: 200px;
+      min-height: 200px;
+    }
+  }
